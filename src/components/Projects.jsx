@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
           className="rounded-xl h-64 w-full object-cover"
         />
 
-        <div className="p-4">
+        <div className="p-4 text-gray-500">
           <h5>{truncate(project.title, 25, 0, 28)}</h5>
 
           <div className="flex flex-col">
@@ -52,10 +52,10 @@ const ProjectCard = ({ project }) => {
             className="flex justify-between items-center 
         font-bold mt-1 mb-2 text-gray-700"
           >
-            <small>{project.raised} ETH Raised</small>
+            <small>{project.raised} MATIC Raised</small>
             <small className="flex justify-start items-center">
               <FaEthereum />
-              <span>{project.cost} ETH</span>
+              <span>{project.cost} MATIC</span>
             </small>
           </div>
 

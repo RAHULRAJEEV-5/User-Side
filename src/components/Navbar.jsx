@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom'
 import { connectWallet } from '../services/blockchain'
 import { truncate, useGlobalState } from '../store'
-
+import Logo from '../assets/logo.png';
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleNav = () => {
@@ -15,7 +15,8 @@ const Navbar = () => {
     <div className='navigation'>
     <div className='w-full h-[90px]'>
       <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
-        <div>
+        <div className="flex items-center">
+        <img className='w-14 h-14 mr-2' src={Logo} alt='/' />
           <h1 className='text-[#00d8ff]'>HashFunds.</h1>
         </div>
         <div className='hidden md:flex'>

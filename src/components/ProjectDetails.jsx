@@ -75,10 +75,10 @@ const ProjectDetails = ({ project }) => {
               </div>
 
               <div className="flex justify-between items-center font-bold mt-2">
-                <small>{project?.raised} ETH Raised</small>
+                <small>{project?.raised} MATIC Raised</small>
                 <small className="flex justify-start items-center">
                   <FaEthereum />
-                  <span>{project?.cost} ETH</span>
+                  <span>{project?.cost} MATIC</span>
                 </small>
               </div>
 

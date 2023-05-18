@@ -1,12 +1,11 @@
 import { useEffect } from 'react'
-import CreateProject from '../components/CreateProject'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import { loadProjects } from '../services/blockchain'
 import { useGlobalState } from '../store'
 import About from '../components/About';
 import Footer from '../components/Footer';
-import Subscribe from '../components/Subscribe';
+import Fade from 'react-reveal/Fade'
 
 const Home = () => {
   const [projects] = useGlobalState('projects')
@@ -16,12 +15,12 @@ const Home = () => {
   }, [])
   return (
     <>
+    <Fade top distance="10%" duration={1500}>
     <Hero />
       <Projects projects={projects} />
       <About />
-      <Subscribe />
       <Footer />
-      
+      </Fade>
     </>
   )
 }

@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import Chat from './components/Chat';
 import Fundraise from './components/Fundraise';
 import AboutPage from './components/AboutPage';
+import Fade from 'react-reveal/Fade'
 
 const App = () => {
   const [loaded, setLoaded] = useState(false)
@@ -31,7 +32,9 @@ const App = () => {
     <div className="min-h-screen relative">
       <Particles options={particlesOptions} init={particlesInit}/>
       <Navbar />
+      <Fade top distance="10%" duration={1500}>
       <Chat />
+      </Fade>
       {loaded ? (
         <Routes>
           <Route path="/" element={<Home />} />

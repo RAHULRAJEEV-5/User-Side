@@ -56,7 +56,7 @@ const Backer = ({ backer }) => (
       <small className="flex justify-start items-center space-x-1">
         <FaEthereum />
         <span className="text-gray-700 font-medium">
-          {backer.contribution} ETH
+          {backer.contribution} MATIC
         </span>
       </small>
     </td>
