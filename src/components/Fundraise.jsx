@@ -6,6 +6,7 @@ import heroVid from '../assets/video4.mp4';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
+import pic1 from '../assets/1.png';
 
 
 
@@ -34,10 +35,9 @@ const Fundraise = () => {
     };
     const slides = [
     
-      "https://o.remove.bg/downloads/2c5f2464-538c-4b67-ad94-6f017fa69457/7-removebg-preview.png",
-      "https://o.remove.bg/downloads/16b9393c-69e8-42f7-b2ea-b5796aa391dc/2-removebg-preview.png",
-      "https://o.remove.bg/downloads/b256c6e1-40e7-4380-848b-4d824127270c/istockphoto-1139754723-612x612-transformed-removebg-preview.png",
-      "https://o.remove.bg/downloads/36fbda75-bd00-45f5-86e7-cb70c9353c83/9-removebg-preview.png",
+      "https://kmmediagroupllc.com/wp-content/uploads/2018/04/funraising-150-1200x800.jpg",
+      "https://pluspng.com/img-png/fundraising-png-fundraising-ideas-listed-in-a-top-10-list-for-schools-1000.png",
+     
       
   ]
 
@@ -234,7 +234,7 @@ const Fundraise = () => {
                           {...register("title", {
                             required: true,
                             maxLength: 20,
-                            pattern: /^[A-Za-z]+$/i,
+                            pattern: /^[A-Za-z]+$/i+" ",
                           })}
                         />
                         {errors?.firstName?.type === "required" && (
@@ -279,8 +279,8 @@ const Fundraise = () => {
                           placeholder="Long text"
                           {...register("Description", {
                             required: false,
-                            maxLength: 100,
-                            pattern: /^[A-Za-z]+$/i,
+                            pattern: /^[A-Za-z]+$/i+" ",
+                            
                           })}
                         />
 
@@ -291,9 +291,11 @@ const Fundraise = () => {
                           className="shadow appearance-none border rounded w-full py-2 px-3 textgray-700 leading-tight focus:outline-none focus:shadow-outline"
                           type="textarea"
                           id="Description"
-                          placeholder="Long text"
+                          placeholder="Aadhaar Card"
                           {...register("aadhar", {
                             required: false,
+                            width: '30px',
+                             height: '60px',
                           })}
                         />
                         <label className="block text-gray-700 text-sm font-bold mt-3 mb-2">
@@ -303,7 +305,7 @@ const Fundraise = () => {
                           className="shadow appearance-none border rounded w-full py-2 px-3 textgray-700 leading-tight focus:outline-none focus:shadow-outline"
                           type="textarea"
                           id="Description"
-                          placeholder="Long text"
+                          placeholder="Pan Card"
                           {...register("pan", {
                             required: false,
                           })}
@@ -316,7 +318,7 @@ const Fundraise = () => {
                           className="shadow appearance-none border rounded w-full py-2 px-3 textgray-700 leading-tight focus:outline-none focus:shadow-outline"
                           type="textarea"
                           id="Description"
-                          placeholder="Long text"
+                          placeholder="Hospital details"
                           {...register("hospital", {
                             required: false,
                           })}

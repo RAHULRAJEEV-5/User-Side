@@ -226,7 +226,7 @@ const Contact = () => {
 
 
 
-//Footer//
+
 <hr style={{position:"absolute",top:"1900px",width:"1519px"}}className="styled-line"/>
 <div  style={{position:"absolute",top:"1930px",right:'400px'}}>
 <section class=" bg-grey">

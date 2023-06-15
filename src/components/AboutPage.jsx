@@ -74,7 +74,7 @@ const AboutPage = () => {
           <Flip top cascade>
           <p color-white>
             With HashFunds you can create your fundraiser in minutes with no upfront fees.  Let us assume an individual, unfortunately, meets with an accident on the road. Fortunately, his best friend signed up on HashFund crowdfunding platform, completed the process of submitting valid documents needed for verification. In a few minutes, he created a crowdfunding campaign to raise funds for his friend’s medical expenses. In a matter of few minutes, funds in the form of digital tokens start coming in to support the financial needs of the injured friend. 
-          </p>
+           <br />Smart Contract ID: 0x0Ab09d5e041Fce8CD29516DB402AEFBECF25C640</p>
           <Link to="/Fundraise"><button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
   <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
   Get Started
